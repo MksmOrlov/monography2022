@@ -18,7 +18,7 @@
 \bigskip
 
 \begin{scnrelfromlist}{подраздел}
-	\scnitem{\ref{sec_identifiers}~\nameref{sec_identifiers}}
+	%\scnitem{\ref{sec_identifiers}~\nameref{sec_identifiers}}
 	\scnitem{\ref{sec_scg}~\nameref{sec_scg}}
 	\scnitem{\ref{sec_scs}~\nameref{sec_scs}}
 	\scnitem{\ref{sec_scn}~\nameref{sec_scn}}
@@ -59,7 +59,7 @@
 
 В рамках данной главы рассматриваются правила идентификации \textit{sc-элементов}, а также \textit{внешние языки ostis-систем} (\textit{SCg-код}, \textit{SCs-код}, \textit{SCn-код}), которые являются различными вариантами внешнего представления текстов \textit{SC-кода}(см. Главу \ref{chapter_sc_code}~\nameref{chapter_sc_code}). Такие языки являются универсальными и, следовательно, семантически эквивалентными языками. Для каждого из указанных \textit{внешних языков} определяется его \textit{синтаксис} и \textit{денотационная семантика}.
 
-
+\begin{comment}
 \section{Внешние идентификаторы sc-элементов --- знаков, входящих в конструкции SC-кода}
 \label{sec_identifiers}
 
@@ -402,6 +402,7 @@
 	\end{scnindent}		
 \end{scnrelfromset}
 \end{SCn}
+\end{comment}
 
 \section{Язык внешнего графического представления конструкций SC-кода --- SCg-код (Semantic Code graphical)}
 \markboth{Язык внешнего графического представления конструкций SC-кода --- SCg-код}{Язык внешнего графического представления конструкций SC-кода --- SCg-код} 
@@ -411,7 +412,7 @@
 \begin{scnrelfromlist}{подраздел}
 	\scnitem{\ref{sec_scg_syntax}~\nameref{sec_scg_syntax}}
 	\scnitem{\ref{sec_scg_semantics}~\nameref{sec_scg_semantics}}
-	\scnitem{\ref{sec_scg_extensions}~\nameref{sec_scg_extensions}}
+	%\scnitem{\ref{sec_scg_extensions}~\nameref{sec_scg_extensions}}
 \end{scnrelfromlist}
 
 \bigskip
@@ -546,6 +547,7 @@
 	\item \textbf{\textit{sc.g-узел с содержимым}} --- \textit{sc.g-узел}, имеющий содержимое, sc.g-узел, являющийся знаком внутреннего файла ostis-системы, sc.g-рамка. \textit{sc.g-рамка} --- это всегда прямоугольник, максимальный размер которого не ограничивается, но минимальный фиксируется и соответствует \textit{sc.g-рамке}, внутри которой обозначаемый ею \textit{файл} не отображается. Каждый входящий в sc-текст \textit{sc-узел, имеющий содержимое}, в \textit{Ядре SCg-кода} изображается в виде прямоугольника произвольного размера с толщиной линии $\bm{0.6d}$. Внутри этого прямоугольника отображается \textit{файл}, обозначаемый изображаемым \textit{sc-узлом}. Если нет необходимости изображать в тексте сам \textit{файл}, то \textit{sc-узел}, обозначающий такой \textit{файл}, в \textit{sc.g-тексте} изображается в виде прямоугольника со сторонами $\bm{2d}$ по вертикали и $\bm{4d}$ по горизонтали.
 \end{textitemize}
 
+\begin{comment}
 \subsection{Иерархическое семейство подъязыков, семантически эквивалентных SCg-коду}
 \label{sec_scg_extensions}
 
@@ -693,6 +695,7 @@
 \end{textitemize}
 
 Вторым вариантом 3D-визуализации \textit{sc.g-текстов} является размещение \textit{sc.g-текстов} на параллельных плоскостях (слоях) с “прошивками”\ между этими слоями, соединяющими синонимичные \textit{sc.g-узлы}, то есть \textit{sc.g-узлы}, имеющие одинаковые приписываемые им внешние идентификаторы. Такой вариант плоской, но многослойной визуализации \textit{sc.g-текстов} дает возможность широко использовать те средства просмотра и редактирования \textit{sc.g-текстов}, которые разработаны для плоской их визуализации(см. \scncite{Standart2021}).
+\end{comment}
 
 \section{Язык внешнего линейного представления конструкций SC-кода --- SCs-код (Semantic Code string)}
 \markboth{Язык внешнего линейного представления конструкций SC-кода --- SCs-код}{Язык внешнего линейного представления конструкций SC-кода --- SCs-код}
@@ -1011,7 +1014,7 @@
 	\includegraphics[scale=0.44]{images/intro/scs_non_membership_connectors_1.png}
 	\label{fig:scs_non_membership_connectors}
 \end{figure}
-
+\begin{comment}
 \newpage
 
 \begin{figure}[H]
@@ -1190,6 +1193,7 @@
 \textbf{\textit{SCn-код}} является языком структурированного внешнего представления текстов \textit{SC-кода} и представляет собой синтаксическое расширение \textit{SCs-кода}, направленное на повышение наглядности и компактности текстов \textit{SCs-кода}. 
 
 \textit{SCn-код} позволяет перейти от линейных текстов \myuline{SCs-кода} к форматированным и фактически двухмерным текстам, в которых появляется декомпозиция исходного линейного текста \myuline{SCs-кода} на \myuline{строчки}, размещенные \scnqqi{по вертикали}. При этом начало всех \myuline{строчек} текста фиксировано и определяется известным и ограниченным набором правил, что дает возможность использовать это при форматировании \myuline{sc.n-текста} (текста, принадлежащего \textit{SCn-коду}, см. \scncite{Standart2021}).
+\end{comment}
 
 \subsection{Синтаксис SCn-кода}
 \label{sec_scn_syntax}
@@ -1371,6 +1375,7 @@
 	\label{scs_example_scn}
 \end{figure}
 
+\begin{comment}
 \subsection{Язык представления исходных текстов баз знаний на основе языка LaTeX}
 \label{subsec_latex}
 
@@ -1530,6 +1535,7 @@ nrel_subdividing <- sc_node_norole_relation;;
 .system_element_0 <- sc_node;;
 
 	\end{verbatim}
+\end{comment}
 
 \section*{Заключение к Главе \ref{chapter_ext_lang}}
 В главе были рассмотрены правила идентификации \textit{sc-элементов}, а также \textit{SCg-код}, \textit{SCs-код}, \textit{SCn-код} --- универсальные \textit{внешние языки ostis-систем}, близкие \textit{языку внутреннего смыслового представления знаний}.
