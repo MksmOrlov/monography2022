@@ -5,53 +5,8 @@
 \vspace{-7\baselineskip}
 
 \begin{SCn}
-\begin{scnrelfromlist}{автор}
-	\scnitem{Бутрин С.В.}
-	\scnitem{Шункевич Д.В.}
-\end{scnrelfromlist}
-
-\bigskip
 
 \scntext{аннотация}{В данной главе рассматриваются актуальные проблемы текущего состояния технологий разработки формальных онтологий сущностей. Предложен список онтологий базовых классов сущностей в рамках \textit{Технологии OSTIS}.}
-
-\bigskip
-
-\begin{scnrelfromlist}{подраздел}
-	\scnitem{\ref{sec_top_ontologies_set}~\nameref{sec_top_ontologies_set}}
-	\scnitem{\ref{sec_top_ontologies_rel}~\nameref{sec_top_ontologies_rel}}	
-	\scnitem{\ref{sec_top_ontologies_params}~\nameref{sec_top_ontologies_params}}
-	\scnitem{\ref{sec_top_ontologies_numbers}~\nameref{sec_top_ontologies_numbers}}
-	\scnitem{\ref{sec_top_ontologies_temp}~\nameref{sec_top_ontologies_temp}}
-	\scnitem{\ref{sec_top_ontologies_dynamic}~\nameref{sec_top_ontologies_dynamic}}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{ключевой знак}
-	\scnitem{Ядро базы знаний ostis-системы}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{онтология}
-	\scnitem{предметная область}
-	\scnitem{знание}
-	\scnitem{база знаний}
-	\scnitem{базовый класс описываемых сущностей}
-	\scnitem{онтология верхнего уровня}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{библиографическая ссылка}
-	\scnitem{\scncite{Davydenko2017a}}
-	\scnitem{\scncite{Gavrilova2001}}
-	\scnitem{\scncite{Dobrov2006}}
-	\scnitem{\scncite{Iqbal2013}}
-	\scnitem{\scncite{Gorshkov2016}}
-	\scnitem{\scncite{Hepp2008}}
-	\scnitem{\scncite{Golenkov2017}}
-\end{scnrelfromlist}
-
 \end{SCn}
 
 \section*{Введение в Главу \ref{chapter_top_ontologies}}
@@ -98,27 +53,6 @@
 \section{Формальная онтология множеств}
 \label{sec_top_ontologies_set}
 
-\begin{SCn}
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{множество}
-	\scnitem{неориентированное множество}
-	\scnitem{ориентированное множество}
-	\scnitem{мультимножество}
-	\scnitem{класс}
-	\scnitem{семейство множеств}
-	\scnitem{мощность множества}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое отношение}
-	\scnitem{включение*}
-	\scnitem{принадлежность*}
-	\scnitem{пересечение*}
-	\scnitem{объединение*}
-	\scnitem{декартово произведение*}
-	\scnitem{разбиение*}
-\end{scnrelfromlist}
-\end{SCn}
-
 Под \textbf{\textit{множеством}} понимается соединение в некое целое M определенных хорошо различимых предметов m нашего созерцания или нашего мышления (которые будут называться «элементами» множества M). 
 
 \textbf{\textit{множество}} --- мысленная сущность, которая связывает одну или несколько сущностей в целое.
@@ -132,8 +66,6 @@
 	\item с помощью определяющего высказывания, содержащего описание общего характеристического свойства, которым обладают все те и только те объекты, которые являются элементами (то есть принадлежат) задаваемого множества;
 	\item с помощью теоретико-множественных операций, позволяющих однозначно задавать новые множества на основе уже заданных (это операции объединения, пересечения, разности множеств и другие).
 \end{textitemize}
-
-Для любого семантически ненормализованного \textit{множества} существует единственное семантически нормализованное \textit{множество}, в котором все элементы, не являющиеся знаками множеств, заменены на знаки множеств.
 
 \begin{SCn}
 
@@ -351,29 +283,6 @@
 \section{Формальная онтология связок и отношений}
 \label{sec_top_ontologies_rel}
 
-\begin{SCn}
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{связь}
-	\scnitem{небинарная связь}
-	\scnitem{отношение}
-	\scnitem{бинарное отношение}
-	\scnitem{небинарное отношение}
-	\scnitem{ролевое отношение}
-	\scnitem{неролевое отношение}
-	\scnitem{квазибинарное отношение}
-	\scnitem{отношение порядка}
-	\scnitem{арность}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое отношение}
-	\scnitem{домен*}
-	\scnitem{атрибут отношения*}
-	\scnitem{область определения\scnrolesign}
-	\scnitem{область прибытия\scnrolesign}
-	\scnitem{соответствие*}
-\end{scnrelfromlist}
-\end{SCn}
-
 \textit{связь} --- \textit{множество}, являющееся абстрактной моделью связи между описываемыми сущностями, которые или знаки которых являются элементами этого \textit{множества}.
 
 Напомним, что все элементы \textit{множества}, представленного в \textit{SC-коде}, являются знаками, но описываемыми сущностями могут быть не только сущности, обозначаемые \textit{sc-элементами}, но и сами эти \textit{sc-элементы}.
@@ -409,7 +318,7 @@
 Такая конструкция может быть обозначена \textbf{\textit{sc-коннектором}} только в случае, когда роли компонентов соответствующей бинарной связи указываются только при помощи \textit{числовых атрибутов 1\scnrolesign} и \textit{2\scnrolesign} или не уточняются вообще.
 	
 \textbf{\textit{небинарная связь}} --- \textit{связь}, имеющая больше двух элементов.
-\end{comment}
+
 \begin{SCn}
 	
 	\scnheader{неориентированная связь}
@@ -427,8 +336,8 @@
 	\scnidtf{Множество всевозможных отношений}
 	\scntext{определение}{\textbf{\textit{отношение}}, \textit{заданное на множестве M} --- это подмножество \textit{декартового произведения} этого множества самого на себя некоторое количество раз}
 \end{SCn}
-	
-В более широком смысле \textbf{\textit{отношение}} --- это математическая структура, которая формально определяет свойства различных объектов и их взаимосвязи.
+\end{comment}
+\textbf{\textit{отношение}}, \textit{заданное на множестве M} --- это подмножество \textit{декартового произведения} этого множества самого на себя некоторое количество раз. В более широком смысле \textbf{\textit{отношение}} --- это математическая структура, которая формально определяет свойства различных объектов и их взаимосвязи.
 
 \begin{SCn}
 \begin{scnsubdividing}
@@ -449,7 +358,6 @@
 \end{scnsubdividing}
 	
 \scnheader{бинарное отношение}
-\scnidtf{отношение арности два}
 \scnidtf{двухместное отношение}
 \scnsuperset{квазибинарное отношение}
 \scnsuperset{отношение порядка}
@@ -473,7 +381,6 @@
 	\scnitem{ролевое отношение}
 	\scnitem{неролевое бинарное отношение}
 \end{scnsubdividing}
-\scntext{определение}{\textbf{\textit{бинарное отношение}} --- это множество таких отношений на множестве \textit{\textit{M}}, являющихся подмножеством \textit{декартова произведения} множества \textit{\textit{M}}.}
 \end{SCn}
 
 \begin{comment}
@@ -668,14 +575,8 @@
 \scnheader{параметр}
 \scnidtf{характеристика}
 \scnidtf{свойство}
-\scnidtf{признак}
 \scnidtf{класс классов}
-\scnidtf{измеряемое свойство}
 \scnidtf{признак классификации или покрытия некоторого класса сущностей}
-\scnidtf{признак разбиения или покрытия некоторого класса сущностей}
-\scnidtf{семейство множеств, разбивающих или покрывающих некоторый класс сущностей}
-\scnidtf{семейство классов сущностей, обладающих одинаковым соответствующим свойством}
-\scnidtf{фактор-множество, соответствующее некоторому отношению эквивалентности, или аналог фактор-множества, соответствующий некоторому отношению толерантности}
 \begin{scnsubdividing}
 	\scnitem{измеряемый параметр}
 	\scnitem{неизмеряемый параметр}
@@ -977,21 +878,6 @@
 
 \section{Формальная онтология темпоральных сущностей}
 \label{sec_top_ontologies_temp}
-	
-\begin{SCn}
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{временная сущность}
-	\scnitem{временная связь}
-	\scnitem{процесс}
-	\scnitem{темпоральное отношение}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевой параметр}
-	\scnitem{начало\scnsupergroupsign}
-	\scnitem{завершение\scnsupergroupsign}
-	\scnitem{длительность\scnsupergroupsign}
-\end{scnrelfromlist}
-\end{SCn}
 		
 \begin{SCn}
 \scnheader{временная сущность}
@@ -1331,6 +1217,9 @@
 
 Таким образом, следует четко отличать динамику внешнего мира, описываемого базой знаний, а динамику самой базы знаний (динамику внутреннего мира). При этом очень важно, чтобы описание динамики базы знаний также входило в состав каждой базы знаний.
 
+\begin{comment}
+		
+
 К числу понятий, используемых для описания динамики базы знаний относятся:
 \begin{textitemize}
 	\item логически удаленный sc-элемент;
@@ -1387,7 +1276,8 @@
 Например:\\
 \textit{\$трансляция sc-текста}\\
 \textit{\$scp-программа}}
-
+\end{comment}
+\begin{SCn}
 \scnheader{специфицированная сущность}
 \begin{scnsubdividing}
 	\scnitem{недостаточно специфицированная сущность}

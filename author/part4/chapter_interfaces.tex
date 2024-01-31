@@ -6,85 +6,8 @@
 
 \bigskip
 \begin{SCn}
-	
-\begin{scnrelfromlist}{автор}
-	\scnitem{Садовский М.~Е.}
-\end{scnrelfromlist}
-\bigskip
 
 \scntext{аннотация}{В главе рассмотрены принципы организации \textit{интерфейсов интеллектуальных компьютерных систем нового поколения}. Ключевыми свойствами \textit{интерфейсов интеллектуальных компьютерных систем нового поколения} являются адаптивность и мультимодальность, что обеспечивает переход от парадигмы грамотного пользователя к парадигме равноправного сотрудничества пользователя с интеллектуальной системой, что позволяет повысить эффективность человеко-машинного взаимодействия. В главе рассматривается подход к обеспечению указанных свойств на основе онтологической модели интерфейса и онтологической модели процесса проектирования интерфейсов.}
-
-\bigskip
-
-\begin{scnrelfromlist}{подраздел}
-	\scnitem{\ref{sec_analysis}~\nameref{sec_analysis}}	
-	\scnitem{\ref{sec_proposed_ui_approach}~\nameref{sec_proposed_ui_approach}}
-	\scnitem{\ref{sec_interface_user_actions}~\nameref{sec_interface_user_actions}}
-	\scnitem{\ref{sec_messages}~\nameref{sec_messages}}
-	\scnitem{\ref{sec_interfaces_actions_and_agents}~\nameref{sec_interfaces_actions_and_agents}}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{интерфейс}
-	\scnitem{физический интерфейс}
-	\scnitem{программный интерфейс}
-	\scnitem{пользовательский интерфейс}
-	\scnitem{интерфейс ostis-систем}
-	\scnitem{адаптивный интерфейс}
-	\scnitem{интеллектуальный интерфейс}
-	\scnitem{мультимодальный интерфейс}
-	\scnitem{компонент пользовательского интерфейса}
-	\scnitem{интерфейсное действие пользователя}
-	\scnitem{сообщение}
-	\scnitem{решатель задач пользовательского интерфейса ostis-систем}
-	\scnitem{интерпретатор sc-моделей пользовательских интерфейсов}
-	\scnitem{интерпретатор пользовательских действий}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое отношение}
-	\scnitem{инициируемое пользовательским интерфейсом действие*}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое знание}
-	\scnitem{Предметная область пользовательских интерфейсов}
-	\scnitem{Предметная область компонентов интерфейса}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{библиографическая ссылка}
-	\scnitem{\scncite{Fomina2020}}
-	\scnitem{\scncite{Hussain2018}}
-	\scnitem{\scncite{Valeev2018}}
-	\scnitem{\scncite{Montero2005}}
-	\scnitem{\scncite{Schlungbaum1997}}
-	\scnitem{\scncite{Brdnik2022}}
-	\scnitem{\scncite{Volkel2020}}
-	\scnitem{\scncite{Ehlert2003}}
-	\scnitem{\scncite{Sadouski2022}}
-	\scnitem{\scncite{Hitz2016}}
-	\scnitem{\scncite{Liu2005}}
-	\scnitem{\scncite{Gaulke2015}}
-	\scnitem{\scncite{Gribova2011a}}
-	\scnitem{\scncite{Gribova2005}}
-	\scnitem{\scncite{Abrams1999}}
-	\scnitem{\scncite{Paterno2009}}
-	\scnitem{\scncite{Limbourg2004}}
-	\scnitem{\scncite{Puerta1994}}
-	\scnitem{\scncite{Heckmann2007}}
-	\scnitem{\scncite{Paulheim2013}}
-	\scnitem{\scncite{Gribova2022}}
-	\scnitem{\scncite{Kong2011}}
-	\scnitem{\scncite{Boriskin2017}}
-	\scnitem{\scncite{Koronchik2011}}
-	\scnitem{\scncite{Koronchik2013}}
-	\scnitem{\scncite{Sadouski2021}}
-	\scnitem{\scncite{Sadouski2022b}}
-	\scnitem{\scncite{Standart2021}}
-	\scnitem{\scncite{Myers2001}}
-\end{scnrelfromlist}
 \end{SCn}
 
 \section*{Введение в Главу \ref{chapter_interfaces}}
@@ -624,6 +547,9 @@
 
 Таким образом, рассмотрена классификация \textit{пользовательских действий пользователей ostis-системы}, которые могут выполняться в рамках \textit{пользовательского интерфейса ostis-системы}.
 
+\begin{comment}
+	
+
 \section{Сообщения, входящие в ostis-систему и выходящие из нее}
 \label{sec_messages}
 
@@ -755,6 +681,7 @@
 \textit{интерпретатор пользовательских действий} является \textit{неатомарным sc-агентом}, который включает в себя множество \textit{sc-агентов}, каждый из которых обрабатывает \textit{интерфейсные действия пользователя} определенного класса (например, \textit{абстрактный sc-агент обработки действия нажатия мыши}, \textit{абстрактный sc-агент обработки действия отпускания мыши} и так далее). Интерпретатор реагирует на появление в базе знаний системы экземпляра \textit{интерфейсного действия пользователя}, находит связанный с ним класс \textit{внутреннего действия} и генерирует экземпляр данного \textit{внутреннего действия} для последующей обработки.
 
 Таким образом, предложена структура \textit{решателя задач пользовательского интерфейса ostis-систем}, которая позволяет обеспечить работу пользователя с \textit{компонентами пользовательского интерфейса ostis-системы}.
+\end{comment}
 
 \section*{Заключение к Главе~\ref{chapter_interfaces}}
 

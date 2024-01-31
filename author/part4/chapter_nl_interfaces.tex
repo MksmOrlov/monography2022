@@ -4,83 +4,11 @@
 
 \vspace{-7\baselineskip}
 
-\begin{SCn}
-    \begin{scnrelfromlist}{автор}
-        \scnitem{Никифоров С.А.}
-        \scnitem{Гойло А.А.}
-        \scnitem{Цянь Л.}
-    \end{scnrelfromlist}
-\end{SCn}
-
-\bigskip
 
 \abstract{
     В данной главе рассматривается подход к реализации \textit{естественно-языковых интерфейсов} \textit{ostis-систем}, построенных по \textit{Технологии OSTIS}, а также предлагается модель \textit{контекста диалога}.
     В данном подходе все этапы анализа, включая \textit{лексический}, \textit{синтаксический} и \textit{семантический анализ} могут производиться непосредственно в \textit{базе знаний} такой системы. Такой подход позволит эффективно решать такие задачи как управление глобальным и локальным \textit{контекстами диалога}, а также разрешение языковых явлений таких как анафоры, омонимия и эллиптические фразы.
 }
-
-\bigskip
-
-\begin{SCn}
-    \begin{scnrelfromlist}{подраздел}
-        \scnitem{\ref{section_natural_language_messages_syntax_analysis}~\nameref{section_natural_language_messages_syntax_analysis}}
-        \scnitem{\ref{section_natural_language_messages_understanding}~\nameref{section_natural_language_messages_understanding}}
-        \scnitem{\ref{section_natural_language_interface_development_methods}~\nameref{section_natural_language_interface_development_methods}}
-    \end{scnrelfromlist}
-
-    \bigskip
-    
-    \begin{scnrelfromlist}{ключевое знак}
-    	\scnitem{Абстрактный sc-агент лексического анализа}
-    	\scnitem{Абстрактный sc-агент синтаксического анализа}
-    	\scnitem{Абстрактный sc-агент понимания сообщения}
-    \end{scnrelfromlist}
-
-    \begin{scnrelfromlist}{ключевое понятие}
-        \scnitem{естественно-языковой интерфейс}
-        \scnitem{речевой интерфейс}
-        \scnitem{действие. лексический анализ естественно-языкового сообщения}
-        \scnitem{действие. синтаксический анализ естественно-языкового сообщения}
-        \scnitem{действие. понимание естественно-языкового сообщения}
-        \scnitem{контекст}
-        \scnitem{контекст диалога}
-    \end{scnrelfromlist}
-
-    \begin{scnrelfromlist}{ключевое отношение}
-        \scnitem{потенциально эквивалентная структура*}
-        \scnitem{множество тематических контекстов диалога*}
-    \end{scnrelfromlist}
-
-    \begin{scnrelfromlist}{ключевое знание}
-        \scnitem{Структура решателя задач естественно-языкового интерфейса ostis-систем}
-        \scnitem{Синтаксический анализ естественно-языкового сообщения}
-        \scnitem{Понимание естественно-языкового сообщения}
-        \scnitem{Разрешение контекста}
-        \scnitem{Принципы построения естественно-языкового интерфейса ostis-систем для китайского языка}
-    \end{scnrelfromlist}
-
-    \bigskip
-
-	\begin{scnrelfromlist}{библиографическая ссылка}
-		\scnitem{\scncite{GlobalMarket}}
-		\scnitem{\scncite{Pais2022}}
-		\scnitem{\scncite{Trajanov2022}}
-		\scnitem{\scncite{Khurana2022}}
-		\scnitem{\scncite{Strubell2019}}
-		\scnitem{\scncite{LLM}}
-		\scnitem{\scncite{Alexa}}
-		\scnitem{\scncite{Siri}}
-		\scnitem{\scncite{GoogleAssistant}}
-		\scnitem{\scncite{Cortana}}
-		\scnitem{\scncite{Hoy2018}}
-		\scnitem{\scncite{Jackendoff1977}}
-		\scnitem{\scncite{Davydenko2018}}
-		\scnitem{\scncite{Shunkevich2018}}
-		\scnitem{\scncite{Davydenko2017}}
-	\end{scnrelfromlist}
-\end{SCn}
-
-\bigskip
 
 \section*{Введение в Главу~\ref{chapter_nl_interfaces}}
 
@@ -440,7 +368,7 @@
 \end{figure*}
 
 Таким образом, актуальная информация собирается в тематический контекст, объединив который с контекстом пользователя и глобальным контекстом можно получить общий контекст, на основании которого должны осуществляться требуемые действия системы, включая генерацию ответа системы.
-\end{comment}
+
 \section{Методика и средства разработки естественно-языковых интерфейсов}
 \label{section_natural_language_interface_development_methods}
 
@@ -515,3 +443,4 @@
 		\end{scnindent}
 	\end{scnrelfromset}
 \end{SCn}
+\end{comment}

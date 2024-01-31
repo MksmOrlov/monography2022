@@ -5,77 +5,6 @@
 
 \vspace{-7\baselineskip}
 
-\begin{SCn}
-	\begin{scnrelfromlist}{автор}
-		\scnitem{Голенков В.~В.}
-		\scnitem{Ивашенко В.~П.}
-	\end{scnrelfromlist}
-\end{SCn}
-
-\bigskip
-
-\begin{SCn}
-	\begin{scnrelfromlist}{подраздел}
-		\scnitem{\ref{sec_sr_scdsemantics}~\nameref{sec_sr_scdsemantics}}
-		\scnitem{\ref{sec_sr_scsyntax}~\nameref{sec_sr_scsyntax}}
-		%\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
-	\end{scnrelfromlist}
-\end{SCn}
-
-\bigskip
-
-\begin{SCn}
-	\begin{scnrelfromlist}{ключевое понятие}
-		\scnitem{sc-элемент}
-		\scnitem{обозначение sc-множества}
-		\scnitem{обозначение sc-связки}
-		\scnitem{обозначение sc-класса}		
-		\scnitem{обозначение sc-структуры}		
-		\scnitem{обозначение внешней сущности}			
-		\scnitem{sc-константа}
-		\scnitem{sc-переменная}				
-		\scnitem{sc-множество}
-		\scnitem{sc-связка}
-		\scnitem{sc-класс}						
-		\scnitem{sc-структура}						
-		\scnitem{внешняя сущность}			
-	\end{scnrelfromlist}
-
-	\begin{scnrelfromlist}{ключевое знание}
-		\scnitem{Базовая денотационная семантика SC-кода}
-	\end{scnrelfromlist}
-\end{SCn}
-
-\bigskip
-
-\begin{SCn}
-\begin{scnrelfromlist}{библиографическая ссылка}
-	\scnitem{\scncite{Narinjani2000}}
-	\scnitem{\scncite{Ivashenko2022}}
-	\scnitem{\scncite{Ivashenko2020String}}
-	\scnitem{\scncite{Collatz1966}}
-	\scnitem{\scncite{Ivashenko2017}}
-	\scnitem{\scncite{Ivashenko2014}}
-	\scnitem{\scncite{Bohm1993}}
-	\scnitem{\scncite{Bohm2002}}
-	\scnitem{\scncite{Nalimov1995}}
-	\scnitem{\scncite{Nalimov1989}}
-	\scnitem{\scncite{Nalimov1979}}
-	\scnitem{\scncite{Martynov2004}}
-	\scnitem{\scncite{Manin2016}}
-	\scnitem{\scncite{Melchuk2016}}
-	\scnitem{\scncite{Harris1992}}
-	\scnitem{\scncite{Alt1995}}
-	\scnitem{\scncite{Study1905}}
-	\scnitem{\scncite{Kostrikin1997}}
-	\scnitem{\scncite{Lowe2001}}
-	\scnitem{\scncite{Manin2014}}
-	\scnitem{\scncite{Martynov2009}}
-	\scnitem{\scncite{Gordey2014}}
-\end{scnrelfromlist}
-
-\end{SCn}
-
 \section*{Введение в Главу \ref{chapter_sc_code}}
 
 В \textit{\ref{sec_sr_scdsemantics}~\nameref{sec_sr_scdsemantics}} и в \textit{\ref{sec_sr_scsyntax}~\nameref{sec_sr_scsyntax}} приведено формальное описание \textit{Денотационной семантики и Синтаксиса SC-кода}. Сделано это будет следующим образом. Поскольку все элементы \textit{информационных конструкций} являются обозначениями описываемых сущностей и, в том числе, обозначениями различных выделяемых классов \textit{sc-элементов}, можно явно ввести различные семантически значимые и синтаксически выделяемые классы \textit{sc-элементов} и на основе этого явно описать средствами \textit{SC-кода} \textit{Базовую денотационную семантику} и \textit{Синтаксис SC-кода}.
@@ -86,64 +15,17 @@
 
 В основе \textit{SC-кода} лежат следующие понятия:
 \begin{textitemize}
-	\item
-	\begin{SCn}
-		\scnheader{sc-элемент}
-		\scnidtf{элементарный (атомарный) фрагмент информационной конструкции, принадлежащей SC-коду}
-		\scnidtf{обозначение одной из описываемых сущностей}
-	\end{SCn}
-	\item
-	\begin{SCn}
-		\scnheader{sc-множество}
-		\scnidtf{sc-конструкция}
-		\scnidtf{множество sc-элементов}
-		\scnidtf{информационная конструкция SC-кода}
-	\end{SCn}
-	\item
-	\begin{SCn}
-		\scnheader{sc-структура}
-		\scnidtf{sc-множество, содержащее связки (знаки связей) между элементами этого множества}
-	\end{SCn}
-	\item
-	\begin{SCn}
-		\scnheader{sc-текст}
-		\scnidtf{связная sc-структура, являющаяся семантически корректной в рамках Базовой денотационной семантики SC-кода, а также синтаксически корректной в рамках соответствующей синтаксической модификации SC-кода}
-	\end{SCn}
-	\item
-	\begin{SCn}
-		\scnheader{sc-знание}
-		\scnidtf{sc-текст, обладающий дополнительным свойством иметь истинное значение по отношению к соответствующей предметной области}
-	\end{SCn}
-	\item
-	\begin{SCn}
-		\scnheader{файл}
-		\scnidtf{информационная конструкция, которая не является sc-конструкцией и которая может храниться в файловой памяти ostis-системы}
-	\end{SCn}
-	\bigskip
-	\item
-	\begin{SCn}
-		\scnheader{sc-идентификатор}
-		\scnsubset{файл}
-		\scnidtf{файл, являющийся внешним идентификатором (в частности, именем) соответствующего sc-элемента, хранимого в sc-памяти ostis-системы}
-	\end{SCn}
-	\item
-	\begin{SCn}
-		\scnheader{основной sc-идентификатор}
-		\scnidtf{sc-идентификатор, который взаимно однозначно соответствует идентифицируемому sc-элементу}
-	\end{SCn}
+	\item{sc-элемент}
+	\item{sc-множество}
+	\item{sc-структура}
+	\item{sc-текст}
+	\item{sc-знание}
+	\item{файл}
+	\item{sc-идентификатор}
 \end{textitemize}
 
 \section{Базовая денотационная семантика SC-кода}
 \label{sec_sr_scdsemantics}
-
-\begin{SCn}
-	\begin{scnrelfromlist}{подраздел}
-		\scnitem{\ref{sec_semantic_classification_sc-elements}~\nameref{sec_semantic_classification_sc-elements}}
-		\scnitem{\ref{sec_meaning_selected_classes_sc-elements}~\nameref{sec_meaning_selected_classes_sc-elements}}
-		\scnitem{\ref{sec_structure_basic_semantic_specification_sc-element}~\nameref{sec_structure_basic_semantic_specification_sc-element}}
-		\scnitem{\ref{sec_ontological_formalization_basic_denotational_semantics_sc-code}~\nameref{sec_ontological_formalization_basic_denotational_semantics_sc-code}}
-	\end{scnrelfromlist}
-\end{SCn}
 	
 %\begin{SCn}
 %	\scntext{содержание}{
@@ -179,6 +61,7 @@
 		\item статичность (стационарность) или динамичность (изменчивость) обозначаемой сущности.
 	\end{textitemize}
 \end{textitemize}
+
 
 \begin{SCn}
 	\scnheader{\large Структурная классификация sc-элементов}
@@ -2219,6 +2102,9 @@
 
 Последние из перечисленных аспектов представления знаний называют \textit{не-факторами представления знаний} (см. \scncite{Narinjani2000}).
 
+\begin{comment}
+	
+
 \section{Синтаксис SC-кода}
 \label{sec_sr_scsyntax}
 
@@ -2257,8 +2143,7 @@
 	\scnnote{Тем не менее, если учитывать особенности обработки в \textit{sc-памяти} разных классов \textit{sc-элементов}, целесообразно сделать расширение \textit{Минимального алфавита SC-кода} и, соответственно, ввести понятие \textbf{\textit{Синтаксического Ядра SC-кода}}, а также целого семейства \textit{синтаксических расширений Ядра SC-кода}}
 \end{SCn}
 
-\subsection{Синтаксическое Ядро SC-кода}
-\label{sec_syntactic_core_sc_code}
+
 
 Синтаксическая структура линейных \textit{информационных конструкций} (строк символов) задается:
 \begin{textitemize}
@@ -2300,6 +2185,10 @@
 	\scnexplanation{Каждая \textit{sc-пара} (константная пара sc-элементов), каждая \textit{переменная sc-пара} и каждое \textit{обозначение sc-пары} связывается со своими элементами не явно вводимыми константными или переменными \textit{sc-парами позитивной принадлежности}, а реализуемыми на "физическом"{} уровне связями (парами) инцидентности. Таким образом \textit{пары инцидентности sc-элементов} --- это специальным образом синтаксически выделенные константные или переменные \textit{sc-пары позитивной принадлежности}, связывающие \textit{обозначения sc-пар} с элементами этих пар. Соответственно этому синтаксические особенности имеют и все \textit{обозначения sc-пар}, поскольку только из них могут выходить ориентированные \textit{пары инцидентности}. Поэтому с синтаксической точки зрения \textit{обозначения sc-пар} будем называть \textbf{\textit{sc-коннекторами}}, \textit{обозначения неориентированных sc-пар} --- \textbf{\textit{sc-ребрами}}, а \textit{обозначения ориентированных sc-пар} --- \textbf{\textit{sc-дугами}}. При этом из класса \textit{пар инцидентности sc-элементов} выделим подкласс пар, связывающих обозначения sc-дуг с теми sc-элементами, в которые эти дуги входят. Такую пару инцидентности будем называть \textbf{\textit{парой инцидентности входящей sc-дуги}}.}
 \end{SCn}
 \end{comment}
+
+\subsection{Синтаксическое Ядро SC-кода}
+\label{sec_syntactic_core_sc_code}
+
 Какие \textit{семантически выделяемые классы sc-элементов} следует также рассматривать, как и \textbf{\textit{синтаксически выделяемые классы sc-элементов}}:
 \begin{textitemize}
 	\item \textit{обозначение неориентированной sc-пары}\\
@@ -2466,7 +2355,7 @@
 		\scnitem{\textup{синтаксический \myuline{тип} каждого} sc-элемента, \textup{то есть синтаксическую метку (значение синтаксического признака-параметра), приписываемую каждому} sc-элементу \textup{и соответствующую \myuline{синтаксическую} классификацию всего множества sc-элементов (Алфавит SC-кода\scnsupergroupsign))}}
 	\end{scnhaselementset}
 \end{SCn}
-\end{comment}
+
 \subsection{Уточнение понятия синтаксически корректной sc-конструкции}
 \label{sec_concept_syntactically_correct_sc_construction}
 
@@ -2552,7 +2441,7 @@
 	\item приписывание \textit{sc-идентификатора} того \textit{sc-класса} которому принадлежит данный \textit{sc-элемент};
 	\item формирование вектора признаков в некотором пространстве признаков (Каждому признаку ставится в соответствии свое \uline{поле}, в которое записывается соответствующее значение признака --- в качестве этого значения тоже можно использовать sc-идентификатор соответствующего значения этого признака).
 \end{textitemize}
-
+\end{comment}
 \begin{comment}
 	
 

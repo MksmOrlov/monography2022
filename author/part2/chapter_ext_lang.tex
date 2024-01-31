@@ -4,53 +4,9 @@
 
 \vspace{-7\baselineskip}
 \begin{SCn}
-\begin{scnrelfromlist}{автор}
-	\scnitem{Садовский М.~Е.}
-	\scnitem{Голенков В.~В.}
-	\scnitem{Жмырко А.~В.}
-	\scnitem{Ефимова А.~А.}
-\end{scnrelfromlist}
-
-\bigskip
 
 \scntext{аннотация}{В главе рассматриваются понятия внешних и внутренних языков \textit{интеллектуальных компьютерных систем нового поколения}. Описываются внешние языки представления знаний в рамках \textit{Технологии OSTIS}, а именно \textit{SCg-код}, \textit{SCs-код} и \textit{SCn-код}. Для каждого из внешних языков детально рассматривается его \textit{синтаксис} и \textit{денотационная семантика}.}
 
-\bigskip
-
-\begin{scnrelfromlist}{подраздел}
-	%\scnitem{\ref{sec_identifiers}~\nameref{sec_identifiers}}
-	\scnitem{\ref{sec_scg}~\nameref{sec_scg}}
-	\scnitem{\ref{sec_scs}~\nameref{sec_scs}}
-	\scnitem{\ref{sec_scn}~\nameref{sec_scn}}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{sc-идентификатор}
-	\scnitem{SCg-код}
-	\scnitem{SCs-код}
-	\scnitem{SCn-код}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое знание}
-	\scnitem{Правила построения sc-идентификаторов}
-	\scnitem{Синтаксис и Денотационная семантика SCg-кода}
-	\scnitem{Синтаксис и Денотационная семантика SCs-кода}
-	\scnitem{Синтаксис и Денотационная семантика SCn-кода}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{библиография}
-	\scnitem{\scncite{Standart2021}}
-	\scnitem{\scncite{Golenkov2014b}}
-	\scnitem{\scncite{IMS}}
-	\scnitem{\scncite{Zhmyrko2022}}
-	\scnitem{\scncite{Ostis-scn-latex-plugin2023}}
-	\scnitem{\scncite{Ostis-standart2023}}
-	\scnitem{\scncite{Ostis-tex2scs-translator2023}}
-\end{scnrelfromlist}
 \end{SCn}
 
 \section*{Введение в Главу \ref{chapter_ext_lang}}
@@ -408,33 +364,6 @@
 \markboth{Язык внешнего графического представления конструкций SC-кода --- SCg-код}{Язык внешнего графического представления конструкций SC-кода --- SCg-код} 
 \label{sec_scg}
 
-\begin{SCn}
-\begin{scnrelfromlist}{подраздел}
-	\scnitem{\ref{sec_scg_syntax}~\nameref{sec_scg_syntax}}
-	\scnitem{\ref{sec_scg_semantics}~\nameref{sec_scg_semantics}}
-	%\scnitem{\ref{sec_scg_extensions}~\nameref{sec_scg_extensions}}
-\end{scnrelfromlist}
-
-\bigskip
-
-\begin{scnrelfromlist}{ключевой знак}
-	\scnitem{SCg-код}
-	\scnitem{Алфавит SCg-кода\scnsupergroupsign}
-	\scnitem{Синтаксис SCg-кода}
-	\scnitem{Денотационная семантика SCg-кода}
-	\scnitem{Иерархическое семейство подъязыков, семантически эквивалентных SCg-коду}
-\end{scnrelfromlist}
-
-\begin{scnrelfromlist}{ключевое понятие}
-	\scnitem{sc.g-элемент}
-	\scnitem{sc.g-коннектор}
-	\scnitem{sc.g-ребро}
-	\scnitem{sc.g-дуга}
-	\scnitem{sc.g-рамка}
-	\scnitem{sc.g-шина}
-\end{scnrelfromlist}
-\end{SCn}
-
 \subsection*{Введение в \ref{sec_scg}}
 
 \begin{SCn}
@@ -482,6 +411,8 @@
 Особое место в \textit{SCg-коде} занимает изображение sc-элементов, являющихся \textit{обозначениями пар принадлежности*}, путем явного использования этого \textit {\myuline{семантически} выделяемого класса sc-элементов}.
 Данный \textit{sc.g-элемент} используется тогда, когда нам необходимо изобразить \textit{sc-дугу}, о которой известно, что она является \textit{обозначением пары принадлежности*}, но неизвестно о какой принадлежности идет речь --- о константной или переменной, о постоянной или временной, о позитивной, негативной или нечеткой.
 
+\begin{comment}
+	
 Кроме \textit{sc.g-элементов}, перечисленных на \textit{\nameref{fig:scg_full}}, в состав \textit{Алфавита SCg-кода} входят также следующие \textit{sc.g-элементы}:
 \begin{textitemize}
 	\item внешние идентификаторы \textit{sc-элементов}, идентичные (приписываемые) соответствующим \textit{sc.g-элементам}.
@@ -496,6 +427,7 @@
 	\item \textit{sc.g-шины}, являющиеся обозначениями тех же сущностей, что и инцидентные им sc.g-элементы.
 \end{textitemize}
 
+\end{comment}
 \begin{comment}
 Заметим также, что, кроме всех перечисленных элементов \textit{Алфавита SCg-кода\scnsupergroupsign}, каждый из которых имеет вполне определенную денотационную семантику, для формализации \textit{Cинтаксиса SCg-кода} необходимо ввести целый ряд более \scnqqi{мелких} синтаксических объектов, например:
 \begin{textitemize}
@@ -517,6 +449,7 @@
 
 Мы ведем речь о принципиально ином (графовом) способе кодирования информации в \textit{компьютерных системах}, но стараемся при этом свести это кодирование к достаточно простому алфавиту хотя бы для того, чтобы искусственно не усложнять проблему создания нового поколения компьютеров, основанных на указанном способе кодирования информации. 
 
+\begin{comment}
 Расширения \textit{Ядра SCg-кода} рассмотрим как направления перехода от текстов \textit{Ядра SCg-кода} к более компактным текстам. Но, поскольку это приводит к усложнению \textit{Синтаксиса SCg-кода} и, в первую очередь, к расширению \textit{Алфавита SCg-кода\scnsupergroupsign}, делать такие расширения необходимо обоснованно с учетом частоты встречаемости в рамках \textit{баз знаний ostis-систем} соответствующих фрагментов.
 
 \begin{figure}[H]
@@ -526,7 +459,7 @@
 	\label{fig:scg_core-alphabet}
 \end{figure}
 
-\begin{comment}
+
 	
 
 \subsection{Денотационная семантика SCg-кода}
@@ -1553,7 +1486,7 @@ nrel_subdividing <- sc_node_norole_relation;;
 .system_element_0 <- sc_node;;
 
 	\end{verbatim}
-\end{comment}
+
 
 \section*{Заключение к Главе \ref{chapter_ext_lang}}
 В главе были рассмотрены правила идентификации \textit{sc-элементов}, а также \textit{SCg-код}, \textit{SCs-код}, \textit{SCn-код} --- универсальные \textit{внешние языки ostis-систем}, близкие \textit{языку внутреннего смыслового представления знаний}.
@@ -1562,3 +1495,4 @@ nrel_subdividing <- sc_node_norole_relation;;
 \textbf{\textit{SCn-код}} является языком структурированного внешнего представления текстов \textit{SC-кода} и представляет собой синтаксическое расширение \textit{SCs-кода}, направленное на повышение наглядности и компактности текстов \textit{SCs-кода}.
 Для каждого из указанных \textit{внешних языков} были определены \textit{синтаксис} и \textit{денотационная семантика}, приведены примеры описанных с помощью этих \textit{языков} \textit{информационных конструкций}.
 %\input{author/references}
+\end{comment}
