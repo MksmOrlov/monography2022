@@ -15,7 +15,7 @@
 
 \begin{scnrelfromlist}{подраздел}
 	\scnitem{\ref{sec_ecosystem_interoperability_support}~\nameref{sec_ecosystem_interoperability_support}}
-	\scnitem{\ref{sec_ecosystem_structure_description}~\nameref{sec_ecosystem_structure_description}}
+	%\scnitem{\ref{sec_ecosystem_structure_description}~\nameref{sec_ecosystem_structure_description}}
 \end{scnrelfromlist}
 
 \bigskip
