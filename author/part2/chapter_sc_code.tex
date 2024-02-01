@@ -2186,8 +2186,49 @@
 \end{SCn}
 \end{comment}
 
+Перечисленное семейство синтаксически выделяемых классов \textit{sc-элементов} составляет \textit{Алфавит Ядра SC-кода\scnsupergroupsign}.
+
+\begin{SCn}
+	\scnheader{Алфавит Ядра SC-кода\scnsupergroupsign}
+	\begin{scneqtoset}
+		\scnitem{sc-ребро}
+		\scnitem{sc-дуга общего вида}
+		\scnitem{базовая sc-дуга}
+		\scnitem{sc-узел, являющийся знаком файла}
+		\scnitem{sc-узел, не являющийся знаком файла}
+	\end{scneqtoset}
+\end{SCn}
+
+Приведем \myuline{синтаксическую} классификацию sc-элементов в рамках Ядра SC-кода
+
+\begin{SCn}
+	\scnheader{sc-элемент}
+	\begin{scnsubdividing}
+		\scnitem{sc-коннектор}
+		\begin{scnindent}
+			\begin{scnsubdividing}
+				\scnitem{sc-дуга}
+				\begin{scnindent}
+					\begin{scnsubdividing}
+						\scnitem{базовая sc-дуга}
+						\scnitem{sc-дуга общего вида}
+					\end{scnsubdividing}
+				\end{scnindent}	
+				\scnitem{sc-ребро}
+			\end{scnsubdividing}
+		\end{scnindent}	
+		\scnitem{sc-узел}
+		\begin{scnsubdividing}
+			\scnitem{sc-узел, являющийся знаком файла}
+			\scnitem{sc-узел, не являющийся знаком файла}
+		\end{scnsubdividing}
+	\end{scnsubdividing}
+\end{SCn}
+
+\begin{comment}
 \subsection{Синтаксическое Ядро SC-кода}
 \label{sec_syntactic_core_sc_code}
+	
 
 Какие \textit{семантически выделяемые классы sc-элементов} следует также рассматривать, как и \textbf{\textit{синтаксически выделяемые классы sc-элементов}}:
 \begin{textitemize}
@@ -2245,45 +2286,8 @@
 	\scnheader{sc-узел, не являющийся знаком файла}
 	\scnidtf{\textit{sc-узел}, имеющий в рамках \textit{Ядра SC-кода} синтаксическую метку \textit{sc-элементов, не являющихся ни знаками файлов, ни обозначениями sc-пар}}
 \end{SCn}
+\end{comment}
 
-Перечисленное семейство синтаксически выделяемых классов \textit{sc-элементов} составляет \textit{Алфавит Ядра SC-кода\scnsupergroupsign}.
-
-\begin{SCn}
-	\scnheader{Алфавит Ядра SC-кода\scnsupergroupsign}
-	\begin{scneqtoset}
-		\scnitem{sc-ребро}
-		\scnitem{sc-дуга общего вида}
-		\scnitem{базовая sc-дуга}
-		\scnitem{sc-узел, являющийся знаком файла}
-		\scnitem{sc-узел, не являющийся знаком файла}
-	\end{scneqtoset}
-\end{SCn}
-
-Приведем \myuline{синтаксическую} классификацию sc-элементов в рамках Ядра SC-кода
-
-\begin{SCn}
-	\scnheader{sc-элемент}
-	\begin{scnsubdividing}
-		\scnitem{sc-коннектор}
-		\begin{scnindent}
-			\begin{scnsubdividing}
-				\scnitem{sc-дуга}
-				\begin{scnindent}
-					\begin{scnsubdividing}
-						\scnitem{базовая sc-дуга}
-						\scnitem{sc-дуга общего вида}
-					\end{scnsubdividing}
-				\end{scnindent}	
-				\scnitem{sc-ребро}
-			\end{scnsubdividing}
-		\end{scnindent}	
-		\scnitem{sc-узел}
-		\begin{scnsubdividing}
-			\scnitem{sc-узел, являющийся знаком файла}
-			\scnitem{sc-узел, не являющийся знаком файла}
-		\end{scnsubdividing}
-	\end{scnsubdividing}
-\end{SCn}
 
 \begin{comment}
 	
