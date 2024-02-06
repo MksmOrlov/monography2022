@@ -325,7 +325,7 @@ passing it to article class \MessageBreak
 \newcommand{\subsubsecstyle}{\bfseries\boldmath}
 %
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-    \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+    \hbox{}\if@twocolumn\hbox{}\fi\fi\fi}
 
 \newcommand{\clearemptydoublepage}{%
         \clearpage{\pagestyle{empty}\cleardoublepage}}
@@ -363,11 +363,10 @@ passing it to article class \MessageBreak
 %
 % \@endpart finishes the part page
 %
-\def\@endpart{\vfil%\newpage
+\def\@endpart{\vfil%
    \if@twoside
        \hbox{}
        \thispagestyle{empty}
-       \newpage
    \fi
    \if@tempswa
      \twocolumn
@@ -378,7 +377,7 @@ passing it to article class \MessageBreak
    #1\par}\@endpart}
 %
 %\newenvironment{partbacktext}{\def\@endpart{\vfil\newpage}}{\thispagestyle{empty} \newpage}
-\newenvironment{partbacktext}{\def\@endpart{\vspace{5\baselineskip}}}{\thispagestyle{empty} \newpage}
+\newenvironment{partbacktext}{\def\@endpart{\vspace{5\baselineskip}}}{\thispagestyle{empty}}
 %
 % (re)define sectioning
 \setcounter{secnumdepth}{3}
@@ -2140,7 +2139,6 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
         \twocolumn[\@maketitle]%
       \fi
     \else
-      \newpage
       \global\@topnum\z@   % Prevents figures from going at top of page.
       \@maketitle
     \fi
@@ -2212,7 +2210,7 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
   \@afterindentfalse\@afterheading
   \clearheadinfo}
 %
-\def\@guidemaketitle{\newpage
+\def\@guidemaketitle{
  \markboth{}{}%
  \def\lastand{\ifnum\value{@inst}=2\relax
                  \unskip{} \andname\
